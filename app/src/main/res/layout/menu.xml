@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            style="@style/menu_tv_style"
+            android:drawableLeft="@drawable/tab_news"
+            android:text="寻物启事"/>
+
+        <TextView
+            android:drawableLeft="@drawable/tab_focus"
+            android:text="失物招领"
+            style="@style/menu_tv_style" />
+    </LinearLayout>
+</ScrollView>
