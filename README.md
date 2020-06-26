@@ -10,7 +10,7 @@ To get a Git project into your build:
 
 Add it in your root build.gradle at the end of repositories:
 
-    allprojects {
+	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
@@ -20,8 +20,8 @@ Add it in your root build.gradle at the end of repositories:
 
 ### Step 2. Add the dependency ###
 
-    dependencies {
-	        implementation 'com.github.nangongyibin:Android_CrossLayout:1.0.2'
+	dependencies {
+	        implementation 'com.github.nangongyibin:Android_SlidingMenu:1.0.3'
 	}
 
 ### update logs ###
