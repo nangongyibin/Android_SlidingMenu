@@ -49,10 +49,18 @@ public class SlideMenu extends FrameLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        //让viewDragHelper帮我们处理触摸事件
-        viewDragHelper.processTouchEvent(ev);
-        return true;
+        //让viewDragHelper帮我们判断是否应该拦截
+        boolean result = viewDragHelper.shouldInterceptTouchEvent(ev);
+        return result;
 //        return super.onInterceptTouchEvent(ev);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        //让viewDragHelper帮我们处理触摸事件
+        viewDragHelper.processTouchEvent(event);
+        return true;
+//        return super.onTouchEvent(event);
     }
 
     ViewDragHelper.Callback cb = new ViewDragHelper.Callback() {
